@@ -39,8 +39,10 @@ const newsBlocks = news.map((s, index) => {
 export default function () {
   return (
     <section className="bg-custom-dark-blue">
-      <div className="w-11/12 mx-auto py-4 space-y-4">
-        <h2 className="text-3xl font-bold text-custom-lighter-orange">New</h2>
+      <div className="w-10/12 mx-auto py-4 space-y-4">
+        <h2 className="text-3xl font-bold text-custom-lighter-orange md:text-3xl-md">
+          New
+        </h2>
         <ul className="space-y-7">{newsBlocks}</ul>
       </div>
     </section>

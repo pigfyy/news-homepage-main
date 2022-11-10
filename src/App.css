@@ -28,6 +28,12 @@ p {
   font-weight: 400;
 }
 
+@media (min-width: 1218px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
 li,
 ol {
   list-style: none;
@@ -44,13 +50,13 @@ a {
 
 /* outlines */
 
-main > * {
+/* main > * {
   outline: solid 2px;
 }
 
 main > .space-y-16 > * {
   outline: solid 2px;
-}
+} */
 
 /* custom colors */
 

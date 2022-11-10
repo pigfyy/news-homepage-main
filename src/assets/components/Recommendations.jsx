@@ -24,7 +24,7 @@ const recommendations = [
   },
 ];
 
-const recommendationsBlock = recommendations.map((recommendation, index) => {
+const recommendationsBlocks = recommendations.map((recommendation, index) => {
   return (
     <li key={uniqid()} className="max-w-md">
       <a href="https://www.google.com/">
@@ -37,7 +37,7 @@ const recommendationsBlock = recommendations.map((recommendation, index) => {
                 alt={recommendation.imageAlt}
               />
             </div>
-            <div className="w-8/12 pl-6 flex flex-col justify-between space-y-0.5">
+            <div className="w-9/12 pl-6 flex flex-col justify-between space-y-0.5">
               <p className="text-left text-3xl font-bold text-custom-light-blue leading-none">{`0${
                 index + 1
               }`}</p>
@@ -55,8 +55,10 @@ const recommendationsBlock = recommendations.map((recommendation, index) => {
 
 export default function () {
   return (
-    <section className="">
-      <ol className="space-y-6">{recommendationsBlock}</ol>
+    <section className="col-span-3">
+      <ol className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-9">
+        {recommendationsBlocks}
+      </ol>
     </section>
   );
 }

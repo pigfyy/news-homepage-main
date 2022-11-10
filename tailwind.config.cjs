@@ -4,10 +4,13 @@ module.exports = {
   theme: {
     fontSize: {
       sm: "0.85rem",
+      "sm-md": "1rem",
       xl: "1.1rem",
       "2xl": "1.23rem",
       "3xl": "2rem",
-      "4xl": "2.4rem",
+      "3xl-md": "3rem",
+      "4xl": "2.5rem",
+      "4xl-md": "3.8rem",
     },
     letterSpacing: {
       tightest: "-.075em",
@@ -22,6 +25,10 @@ module.exports = {
     extend: {
       maxWidth: {
         "118px": "118px",
+      },
+      screens: {
+        md: "1172px",
+        // => @media (min-width: 992px) { ... }
       },
     },
   },
