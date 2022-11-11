@@ -2,6 +2,16 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    colors: {
+      inherit: "inherit",
+      white: "#fffdfa",
+      "light-grey": "#c5c6ce",
+      grey: "#334155",
+      "yellow-orange": "#f2ac4a",
+      "purple-blue": "#5d5f79",
+      "red-orange": "#f15e50",
+      "navy-blue": "#00001a",
+    },
     fontSize: {
       sm: "0.85rem",
       "sm-md": "1rem",

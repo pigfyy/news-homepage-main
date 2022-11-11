@@ -1,0 +1,49 @@
+{
+  "headerButtons": [
+    { "text": "Home", "link": "https://www.google.com/" },
+    { "text": "New", "link": "https://www.google.com/" },
+    { "text": "Popular", "link": "https://www.google.com/" },
+    { "text": "Trending", "link": "https://www.google.com/" },
+    { "text": "Categories", "link": "https://www.google.com/" }
+  ],
+  "news": [
+    {
+      "title": "Hydrogen VS Electric Cars",
+      "description": "Will hydrogen-fueled cars ever catch up to EVs?",
+      "link": "https://www.carwow.co.uk/blog/hydrogen-vs-electric-cars"
+    },
+    {
+      "title": "The Downsides of AI Artistry",
+      "description": "What are the possible adverse effects of on-demand AI image generation?",
+      "link": "https://madhansart.com/is-ai-art-really-an-art/"
+    },
+    {
+      "title": "Is VC Funding Drying Up?",
+      "description": "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+      "link": "https://fortune.com/2022/08/10/vc-funding-drying-venture-cap…l-startups-founders-surviving-market-downturn-peter-pezaris/"
+    }
+  ],
+  "recommendations": [
+    {
+      "link": "https://www.howtogeek.com/692747/why-people-restore-vintage-computers-and-how-you-can-too/",
+      "image": "image-retro-pcs.jpg",
+      "imageAlt": "picture of retro pcs",
+      "title": "Reviving Retro PCs",
+      "description": "What happens when old PCs are given modern upgrades?"
+    },
+    {
+      "link": "https://www.cnet.com/tech/computing/best-laptop/",
+      "image": "image-top-laptops.jpg",
+      "imageAlt": "picture of keyboards on modern laptops",
+      "title": "Top 10 Laptops of 2022",
+      "description": "Our best picks for various needs and budgets"
+    },
+    {
+      "link": "https://www.weforum.org/agenda/2022/07/gaming-pandemic-lockdowns-pwc-growth/",
+      "image": "image-gaming-growth.jpg",
+      "imageAlt": "picture of a video game controller floating above mans hand",
+      "title": "The Growth of Gaming",
+      "description": "How the pandemic has sparked fresh opportunities"
+    }
+  ]
+}

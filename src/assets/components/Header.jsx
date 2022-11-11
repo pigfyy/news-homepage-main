@@ -1,28 +1,29 @@
 import logo from "../imgs/logo.svg";
+import data from "../data.json";
 
 export default function (props) {
   function makeMenu() {
     if (props.windowWidth < 768) {
-      return <span className="material-symbols-outlined text-4xl">menu</span>;
+      return (
+        <button onClick={props.toggleMobileMenu}>
+          <span className="material-symbols-outlined text-4xl">menu</span>
+        </button>
+      );
     }
     return (
-      <>
-        <button className="header-btn text-custom-primary-blue text-xl">
-          Home
-        </button>
-        <button className="header-btn text-custom-primary-blue text-xl">
-          New
-        </button>
-        <button className="header-btn text-custom-primary-blue text-xl">
-          Popular
-        </button>
-        <button className="header-btn text-custom-primary-blue text-xl">
-          Trending
-        </button>
-        <button className="header-btn text-custom-primary-blue text-xl">
-          Categories
-        </button>
-      </>
+      <ul className="flex flex-row space-x-8">
+        {data.headerButtons.map((s, index) => {
+          return (
+            <li key={index}>
+              <a href={s.link}>
+                <button className="text-2xl font-xl text-custom-primary-blue hover:text-red-orange">
+                  {s.text}
+                </button>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
     );
   }
 

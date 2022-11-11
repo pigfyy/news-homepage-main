@@ -1,10 +1,10 @@
 :root {
-  --clr-neutral-100: hsl(36, 100%, 99%);
-  --clr-neutral-200: hsl(233, 8%, 79%);
-  --clr-orange-300: hsl(35, 87%, 62%);
-  --clr-primary-400: hsl(236, 13%, 42%);
-  --clr-orange-500: hsl(5, 85%, 63%);
-  --clr-dark-800: hsl(240, 100%, 5%);
+  --clr-neutral-100: #fffdfa;
+  --clr-neutral-200: #c5c6ce;
+  --clr-orange-300: #f2ac4a;
+  --clr-primary-400: #5d5f79;
+  --clr-orange-500: #f15e50;
+  --clr-dark-800: #00001a;
 }
 
 body {
@@ -66,6 +66,10 @@ main > .space-y-16 > * {
 
 .bg-custom-dark-orange {
   background-color: var(--clr-orange-500);
+}
+
+.text-custom-dark-orange {
+  color: var(--clr-orange-500);
 }
 
 .text-custom-white {

@@ -3,7 +3,7 @@ import mobileImg from "../imgs/image-web-3-mobile.jpg";
 
 export default function (props) {
   return (
-    <section className="space-y-5 col-span-2 md:flex md:flex-col">
+    <section className="space-y-5 col-span-2 md:space-y-8 md:flex md:flex-col">
       <img
         src={props.windowWidth > 740 ? desktopImg : mobileImg}
         alt="picture of web 3"
@@ -23,9 +23,12 @@ export default function (props) {
             </p>
           </div>
           <div>
-            <button className="bg-custom-dark-orange text-custom-white tracking-widest font-bold text-sm py-3 px-8">
+            <a
+              href="https://www.forbes.com/sites/forbestechcouncil/2022/08/17/understanding-the-impact-of-web-30-on-the-future-of-business/"
+              className="bg-custom-dark-orange text-custom-white tracking-widest font-bold text-sm py-3 px-8 hover:bg-navy-blue"
+            >
               READ MORE
-            </button>
+            </a>
           </div>
         </div>
       </div>
